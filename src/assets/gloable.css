@@ -1,0 +1,34 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.ml-5{
+    margin-left: 5px;
+}
+
+
+.ml-50{
+    margin-left: 50px;
+}
+
+
+
+
+.ml-15{
+    margin-left: 15px;
+}
+
+
+.mr-5{
+    margin-right: 5px;
+}
+.pd-10{
+    padding: 10px 0;
+}
+
+.wrapper {
+ height: 100vh;
+ background-image: linear-gradient(to bottom right, #FC466B, #3F5EFB);
+ overflow: hidden;
+}
