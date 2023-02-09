@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bkbk.qsdemo.mapper.RentMapper">
+   <update id="update">
+       update rent
+       <set>
+           <if test="name!=null">
+               `name`=#{name},
+           </if>
+
+           <if test="pwd!=null">
+               pwd=#{pwd},
+           </if>
+
+
+           <if test="phone!=null">
+               phone=#{phone},
+           </if>
+
+           <if test="permiss!=null">
+               permiss=#{permiss},
+           </if>
+
+           <if test="check!=null">
+               `check`=#{check},
+           </if>
+
+           <if test="usernum!=null">
+               usernum=#{usernum}
+           </if>
+
+       </set>
+       <where>
+           id =#{id}
+       </where>
+
+   </update>
+
+</mapper>

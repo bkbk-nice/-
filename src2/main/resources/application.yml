@@ -1,0 +1,27 @@
+server:
+  port: 9090
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/qssql?serverTimezone=GMT%2b8
+    username: root
+    password: root
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
+
+#  configuration:
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#    map-underscore-to-camel-case: true
+# 自定义文档访问的地址，http://localhost:8080/sss
+#  springdoc.swagger-ui.path: /rent
+#  # 需要扫描的包路径
+#  springdoc.packagesToScan: com.bkbk
+#  # 匹配的url路径
+#  springdoc.pathsToMatch: /*
